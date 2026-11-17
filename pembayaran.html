@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pembayaran - Sambal Nusantara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span aria-hidden="true">🌶️</span> Sambal Nusantara</a>
+      <form class="search" role="search" onsubmit="return false">
+        <span aria-hidden="true">🔍</span>
+        <input type="text" placeholder="Cari sambal..." aria-label="Cari sambal">
+        <a class="btn" href="katalog.html">Cari</a>
+      </form>
+      <nav class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="katalog.html">Produk</a>
+        <a href="lacak-pesanan.html">Lacak Pesanan</a>
+        <a href="ulasan.html">Ulasan</a>
+        <a href="keranjang.html"><span aria-hidden="true">🛒</span> Keranjang (2)</a>
+        <a class="btn btn-outline" href="login.html">Masuk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page">
+      <h1>Pembayaran</h1>
+      <div class="checkout">
+        <div class="stack">
+          <section class="card">
+            <h3>Alamat pengiriman</h3>
+            <div class="grid-2">
+              <div><label class="lbl" for="penerima">Nama penerima</label><input class="input is-filled" id="penerima" type="text" value="Dewi Anggraini"></div>
+              <div><label class="lbl" for="hp">Nomor HP</label><input class="input is-filled" id="hp" type="tel" value="0812 3456 7890"></div>
+            </div>
+            <div class="field" style="margin-top:14px;margin-bottom:0">
+              <label class="lbl" for="alamat">Alamat lengkap</label>
+              <input class="input is-filled" id="alamat" type="text" value="Jl. Raya Darmo No. 12, Surabaya">
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>Pengiriman</h3>
+            <label class="choice"><input type="radio" name="kirim" checked><span class="grow">Reguler · 2–3 hari</span><span>Rp18.000</span></label>
+            <label class="choice"><input type="radio" name="kirim"><span class="grow">Same day · hari ini</span><span>Rp35.000</span></label>
+          </section>
+
+          <section class="card">
+            <h3>Metode pembayaran</h3>
+            <label class="choice"><input type="radio" name="bayar" checked><span class="grow">Transfer virtual account (BCA, BNI, Mandiri)</span></label>
+            <label class="choice"><input type="radio" name="bayar"><span class="grow">QRIS</span></label>
+            <label class="choice"><input type="radio" name="bayar"><span class="grow">E-wallet (GoPay, OVO, DANA)</span></label>
+            <label class="choice"><input type="radio" name="bayar"><span class="grow">Bayar di tempat (COD)</span></label>
+          </section>
+        </div>
+
+        <aside class="card summary">
+          <h3>Pesananmu</h3>
+          <div class="sum-row"><span>Bawang Mercon × 1</span><span>Rp42.000</span></div>
+          <div class="sum-row"><span>Terasi Bu Rini × 2</span><span>Rp116.000</span></div>
+          <div class="sum-row"><span>Ongkir</span><span>Rp18.000</span></div>
+          <div class="sum-row discount"><span>Voucher</span><span>−Rp15.000</span></div>
+          <div class="sum-total"><span>Total bayar</span><strong>Rp161.000</strong></div>
+          <a class="btn btn-block" style="margin-top:14px" href="riwayat-pesanan.html">Bayar sekarang</a>
+          <p class="secure"><span aria-hidden="true">🔒</span> Pembayaran aman dan terenkripsi</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand"><span aria-hidden="true">🌶️</span> Sambal Nusantara</div>
+        <p>Sambal rumahan dari cabai segar Jawa Timur. Tanpa pengawet, dikirim ke seluruh Indonesia.</p>
+        <p><span aria-hidden="true">📍</span> Jl. Raya Darmo No. 88, Surabaya</p>
+      </div>
+      <div>
+        <h4>Belanja</h4>
+        <ul>
+          <li><a href="katalog.html">Semua produk</a></li>
+          <li><a href="katalog.html">Terlaris</a></li>
+          <li><a href="katalog.html">Paket hemat</a></li>
+          <li><a href="keranjang.html">Voucher</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Bantuan</h4>
+        <ul>
+          <li><a href="lacak-pesanan.html">Lacak pesanan</a></li>
+          <li><a href="pembayaran.html">Cara pembayaran</a></li>
+          <li><a href="riwayat-pesanan.html">Pengembalian barang</a></li>
+          <li><a href="index.html">Pertanyaan umum</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi kami</h4>
+        <ul>
+          <li><span aria-hidden="true">💬</span> WhatsApp 0812 0000 1234</li>
+          <li><span aria-hidden="true">✉️</span> halo@sambalnusantara.id</li>
+          <li>Senin–Sabtu, 08.00–17.00</li>
+          <li>BCA · QRIS · GoPay · JNE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Sambal Nusantara. Hak cipta dilindungi.</span>
+      <span><a href="index.html">Syarat &amp; Ketentuan</a> · <a href="index.html">Kebijakan Privasi</a></span>
+    </div>
+  </footer>
+</body>
+</html>

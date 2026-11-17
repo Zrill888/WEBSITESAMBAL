@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kelola Profil - Sambal Nusantara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span aria-hidden="true">🌶️</span> Sambal Nusantara</a>
+      <form class="search" role="search" onsubmit="return false">
+        <span aria-hidden="true">🔍</span>
+        <input type="text" placeholder="Cari sambal..." aria-label="Cari sambal">
+        <a class="btn" href="katalog.html">Cari</a>
+      </form>
+      <nav class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="katalog.html">Produk</a>
+        <a href="lacak-pesanan.html">Lacak Pesanan</a>
+        <a href="ulasan.html">Ulasan</a>
+        <a href="keranjang.html"><span aria-hidden="true">🛒</span> Keranjang (2)</a>
+        <a class="btn btn-outline" href="login.html">Masuk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page">
+      <div class="account">
+        <nav class="side-menu" aria-label="Menu akun">
+          <a class="is-active" href="profil.html">Profil saya</a>
+          <a href="riwayat-pesanan.html">Riwayat pesanan</a>
+          <a href="lacak-pesanan.html">Lacak pesanan</a>
+          <a href="login.html">Keluar</a>
+        </nav>
+        <section class="profile-form">
+          <h1>Profil saya</h1>
+          <p class="page-sub">Perbarui data diri dan kata sandimu.</p>
+          <div class="avatar-row">
+            <div class="avatar"><img src="img/avatar.jpg" alt="Foto profil"></div>
+            <a class="btn btn-outline" href="profil.html">Ganti foto</a>
+          </div>
+          <form onsubmit="return false">
+            <div class="grid-2">
+              <div><label class="lbl" for="nama">Nama lengkap</label><input class="input is-filled" id="nama" type="text" value="Dewi Anggraini"></div>
+              <div><label class="lbl" for="email">Email</label><input class="input is-filled" id="email" type="email" value="dewi@email.com"></div>
+              <div><label class="lbl" for="hp">Nomor HP</label><input class="input is-filled" id="hp" type="tel" value="0812 3456 7890"></div>
+              <div><label class="lbl" for="lahir">Tanggal lahir</label><input class="input is-filled" id="lahir" type="text" value="12 / 05 / 1994"></div>
+            </div>
+            <div class="field" style="margin-top:16px;margin-bottom:0">
+              <label class="lbl" for="alamat">Alamat utama</label>
+              <input class="input is-filled" id="alamat" type="text" value="Jl. Raya Darmo No. 12, Surabaya">
+            </div>
+            <h3>Ubah kata sandi</h3>
+            <div class="grid-2">
+              <div><label class="lbl" for="pw1">Kata sandi baru</label><input class="input" id="pw1" type="password" value="12345678"></div>
+              <div><label class="lbl" for="pw2">Ulangi kata sandi</label><input class="input" id="pw2" type="password" value="12345678"></div>
+            </div>
+            <a class="btn" href="riwayat-pesanan.html">Simpan perubahan</a>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand"><span aria-hidden="true">🌶️</span> Sambal Nusantara</div>
+        <p>Sambal rumahan dari cabai segar Jawa Timur. Tanpa pengawet, dikirim ke seluruh Indonesia.</p>
+        <p><span aria-hidden="true">📍</span> Jl. Raya Darmo No. 88, Surabaya</p>
+      </div>
+      <div>
+        <h4>Belanja</h4>
+        <ul>
+          <li><a href="katalog.html">Semua produk</a></li>
+          <li><a href="katalog.html">Terlaris</a></li>
+          <li><a href="katalog.html">Paket hemat</a></li>
+          <li><a href="keranjang.html">Voucher</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Bantuan</h4>
+        <ul>
+          <li><a href="lacak-pesanan.html">Lacak pesanan</a></li>
+          <li><a href="pembayaran.html">Cara pembayaran</a></li>
+          <li><a href="riwayat-pesanan.html">Pengembalian barang</a></li>
+          <li><a href="index.html">Pertanyaan umum</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi kami</h4>
+        <ul>
+          <li><span aria-hidden="true">💬</span> WhatsApp 0812 0000 1234</li>
+          <li><span aria-hidden="true">✉️</span> halo@sambalnusantara.id</li>
+          <li>Senin–Sabtu, 08.00–17.00</li>
+          <li>BCA · QRIS · GoPay · JNE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Sambal Nusantara. Hak cipta dilindungi.</span>
+      <span><a href="index.html">Syarat &amp; Ketentuan</a> · <a href="index.html">Kebijakan Privasi</a></span>
+    </div>
+  </footer>
+</body>
+</html>
